@@ -6,6 +6,8 @@
 
 Для проверки обновлений проектов по списку.
 
+Зависимости: jq curl
+
 Результат проверки при наличии новых версий:
 
 ![Screenshot](https://nc.grigrus.ru/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=593&a=true&file=new_release.png&t=uJrwSoSlPKxqysK&scalingup=0)
