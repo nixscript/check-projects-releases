@@ -13,6 +13,7 @@ if [[ ! -e ./github-check.list ]]; then
 	exit 2
 fi
 
+if [[ ! -e github-last-versions.list ]]; then touch github-last-versions.list; fi
 checkList=$(cat ./github-check.list)
 [ ! -e "./github-last-versions.list" ] || touch github-last-versions.list
 newVersion=
