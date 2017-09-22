@@ -1,4 +1,5 @@
 #!/bin/bash
+# https://github.com/nixscript/check-projects-releases
 
 if [[ ! -e ./github-check.list ]]; then
 	touch github-check.list
