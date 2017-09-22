@@ -19,7 +19,7 @@ versionLine=($(cat ./github-last-versions.list))
 count=0
 for line in $checkList; do
 	echo "Проверка $line..."
-	content=$(curl -s https://api.github.com/repos/$line/releases/latest)
+	content=$(curl -s "https://api.github.com/repos/$line/releases/latest")
 	githubLastVersion=$(jq -r '.id' <<<"$content")
 	if [ "${versionLine[$count]}" != "$githubLastVersion" ]; then
 		echo -e "\e[34m$line\e[0m\e[37;1m < \e[0m\e[33m$githubLastVersion\e[0m \e[37mНовый релиз доступен!!!\e[0m"
